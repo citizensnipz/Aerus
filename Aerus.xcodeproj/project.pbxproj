@@ -1,0 +1,690 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD5302BA2ABD2790004CA78F /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5302B92ABD2790004CA78F /* Task.swift */; };
+		BD5302BC2ABD27B4004CA78F /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5302BB2ABD27B4004CA78F /* Scheduler.swift */; };
+		BD5302BE2ABD27D3004CA78F /* WorkSleepPeriods.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5302BD2ABD27D3004CA78F /* WorkSleepPeriods.swift */; };
+		BD5302C02ABD8759004CA78F /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5302BF2ABD8759004CA78F /* SampleData.swift */; };
+		BD5302C32ABD8B75004CA78F /* TaskCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5302C22ABD8B75004CA78F /* TaskCard.swift */; };
+		BD5302C52ABD94EE004CA78F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5302C42ABD94EE004CA78F /* Extensions.swift */; };
+		BD5302C72ABDF73C004CA78F /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5302C62ABDF73C004CA78F /* Settings.swift */; };
+		BD5302C92ABEBB59004CA78F /* TaskViewBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5302C82ABEBB59004CA78F /* TaskViewBottomSheet.swift */; };
+		BD5302D62ABF54B3004CA78F /* Avenir.ttc in Resources */ = {isa = PBXBuildFile; fileRef = BD5302D32ABF54B3004CA78F /* Avenir.ttc */; };
+		BD5302D72ABF54B3004CA78F /* Brother 1816 Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = BD5302D42ABF54B3004CA78F /* Brother 1816 Light.otf */; };
+		BD5302DF2AC17064004CA78F /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5302DE2AC17064004CA78F /* ChatView.swift */; };
+		BD5302E12AC1A0BB004CA78F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5302E02AC1A0BB004CA78F /* MainView.swift */; };
+		BD5302E62AC1E591004CA78F /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5302E52AC1E591004CA78F /* List.swift */; };
+		BD5302E82AC1F004004CA78F /* AllListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5302E72AC1F004004CA78F /* AllListView.swift */; };
+		BD5302EA2AC31082004CA78F /* Shade.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5302E92AC31082004CA78F /* Shade.swift */; };
+		BDD9C3F02AA5C13B00C5354E /* AerusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD9C3EF2AA5C13B00C5354E /* AerusApp.swift */; };
+		BDD9C3F22AA5C13B00C5354E /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD9C3F12AA5C13B00C5354E /* ListView.swift */; };
+		BDD9C3F42AA5C13D00C5354E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDD9C3F32AA5C13D00C5354E /* Assets.xcassets */; };
+		BDD9C3F72AA5C13D00C5354E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDD9C3F62AA5C13D00C5354E /* Preview Assets.xcassets */; };
+		BDD9C4012AA5C13D00C5354E /* AerusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD9C4002AA5C13D00C5354E /* AerusTests.swift */; };
+		BDD9C40B2AA5C13D00C5354E /* AerusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD9C40A2AA5C13D00C5354E /* AerusUITests.swift */; };
+		BDD9C40D2AA5C13D00C5354E /* AerusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD9C40C2AA5C13D00C5354E /* AerusUITestsLaunchTests.swift */; };
+		BDD9C41A2AA5CB0900C5354E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD9C4192AA5CB0900C5354E /* LoginView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BDD9C3FD2AA5C13D00C5354E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDD9C3E42AA5C13B00C5354E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDD9C3EB2AA5C13B00C5354E;
+			remoteInfo = Aerus;
+		};
+		BDD9C4072AA5C13D00C5354E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDD9C3E42AA5C13B00C5354E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDD9C3EB2AA5C13B00C5354E;
+			remoteInfo = Aerus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BD5302B92ABD2790004CA78F /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		BD5302BB2ABD27B4004CA78F /* Scheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scheduler.swift; sourceTree = "<group>"; };
+		BD5302BD2ABD27D3004CA78F /* WorkSleepPeriods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkSleepPeriods.swift; sourceTree = "<group>"; };
+		BD5302BF2ABD8759004CA78F /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		BD5302C22ABD8B75004CA78F /* TaskCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCard.swift; sourceTree = "<group>"; };
+		BD5302C42ABD94EE004CA78F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		BD5302C62ABDF73C004CA78F /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		BD5302C82ABEBB59004CA78F /* TaskViewBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewBottomSheet.swift; sourceTree = "<group>"; };
+		BD5302D32ABF54B3004CA78F /* Avenir.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; name = Avenir.ttc; path = Aerus/Fonts/Avenir.ttc; sourceTree = SOURCE_ROOT; };
+		BD5302D42ABF54B3004CA78F /* Brother 1816 Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Brother 1816 Light.otf"; path = "/Volumes/Samsung SSD1 Files/coding/Aerus/Aerus/Fonts/Brother 1816 Light.otf"; sourceTree = "<absolute>"; };
+		BD5302DE2AC17064004CA78F /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		BD5302E02AC1A0BB004CA78F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		BD5302E42AC1E414004CA78F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BD5302E52AC1E591004CA78F /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		BD5302E72AC1F004004CA78F /* AllListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllListView.swift; sourceTree = "<group>"; };
+		BD5302E92AC31082004CA78F /* Shade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shade.swift; sourceTree = "<group>"; };
+		BDD9C3EC2AA5C13B00C5354E /* Aerus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aerus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDD9C3EF2AA5C13B00C5354E /* AerusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AerusApp.swift; sourceTree = "<group>"; };
+		BDD9C3F12AA5C13B00C5354E /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		BDD9C3F32AA5C13D00C5354E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BDD9C3F62AA5C13D00C5354E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BDD9C3FC2AA5C13D00C5354E /* AerusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AerusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDD9C4002AA5C13D00C5354E /* AerusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AerusTests.swift; sourceTree = "<group>"; };
+		BDD9C4062AA5C13D00C5354E /* AerusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AerusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDD9C40A2AA5C13D00C5354E /* AerusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AerusUITests.swift; sourceTree = "<group>"; };
+		BDD9C40C2AA5C13D00C5354E /* AerusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AerusUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BDD9C4192AA5CB0900C5354E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BDD9C3E92AA5C13B00C5354E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDD9C3F92AA5C13D00C5354E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDD9C4032AA5C13D00C5354E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD5302C12ABD8B5C004CA78F /* UI Elements */ = {
+			isa = PBXGroup;
+			children = (
+				BD5302C22ABD8B75004CA78F /* TaskCard.swift */,
+				BD5302C82ABEBB59004CA78F /* TaskViewBottomSheet.swift */,
+				BD5302E92AC31082004CA78F /* Shade.swift */,
+			);
+			path = "UI Elements";
+			sourceTree = "<group>";
+		};
+		BD5302CE2ABF53E8004CA78F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BD5302D32ABF54B3004CA78F /* Avenir.ttc */,
+				BD5302D42ABF54B3004CA78F /* Brother 1816 Light.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		BD5302D92AC16262004CA78F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BD5302C12ABD8B5C004CA78F /* UI Elements */,
+				BDD9C4192AA5CB0900C5354E /* LoginView.swift */,
+				BDD9C3F12AA5C13B00C5354E /* ListView.swift */,
+				BD5302E02AC1A0BB004CA78F /* MainView.swift */,
+				BD5302DE2AC17064004CA78F /* ChatView.swift */,
+				BD5302E72AC1F004004CA78F /* AllListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BD5302DA2AC16271004CA78F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BD5302BB2ABD27B4004CA78F /* Scheduler.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BD5302DB2AC16286004CA78F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BD5302B92ABD2790004CA78F /* Task.swift */,
+				BD5302BF2ABD8759004CA78F /* SampleData.swift */,
+				BD5302BD2ABD27D3004CA78F /* WorkSleepPeriods.swift */,
+				BD5302E52AC1E591004CA78F /* List.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BDD9C3E32AA5C13B00C5354E = {
+			isa = PBXGroup;
+			children = (
+				BDD9C3EE2AA5C13B00C5354E /* Aerus */,
+				BDD9C3FF2AA5C13D00C5354E /* AerusTests */,
+				BDD9C4092AA5C13D00C5354E /* AerusUITests */,
+				BDD9C3ED2AA5C13B00C5354E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BDD9C3ED2AA5C13B00C5354E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDD9C3EC2AA5C13B00C5354E /* Aerus.app */,
+				BDD9C3FC2AA5C13D00C5354E /* AerusTests.xctest */,
+				BDD9C4062AA5C13D00C5354E /* AerusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDD9C3EE2AA5C13B00C5354E /* Aerus */ = {
+			isa = PBXGroup;
+			children = (
+				BD5302E42AC1E414004CA78F /* Info.plist */,
+				BD5302CE2ABF53E8004CA78F /* Fonts */,
+				BD5302DB2AC16286004CA78F /* Models */,
+				BD5302C62ABDF73C004CA78F /* Settings.swift */,
+				BD5302C42ABD94EE004CA78F /* Extensions.swift */,
+				BDD9C3EF2AA5C13B00C5354E /* AerusApp.swift */,
+				BD5302D92AC16262004CA78F /* Views */,
+				BDD9C3F32AA5C13D00C5354E /* Assets.xcassets */,
+				BDD9C3F52AA5C13D00C5354E /* Preview Content */,
+				BD5302DA2AC16271004CA78F /* Controllers */,
+			);
+			path = Aerus;
+			sourceTree = "<group>";
+		};
+		BDD9C3F52AA5C13D00C5354E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BDD9C3F62AA5C13D00C5354E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BDD9C3FF2AA5C13D00C5354E /* AerusTests */ = {
+			isa = PBXGroup;
+			children = (
+				BDD9C4002AA5C13D00C5354E /* AerusTests.swift */,
+			);
+			path = AerusTests;
+			sourceTree = "<group>";
+		};
+		BDD9C4092AA5C13D00C5354E /* AerusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BDD9C40A2AA5C13D00C5354E /* AerusUITests.swift */,
+				BDD9C40C2AA5C13D00C5354E /* AerusUITestsLaunchTests.swift */,
+			);
+			path = AerusUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BDD9C3EB2AA5C13B00C5354E /* Aerus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDD9C4102AA5C13D00C5354E /* Build configuration list for PBXNativeTarget "Aerus" */;
+			buildPhases = (
+				BDD9C3E82AA5C13B00C5354E /* Sources */,
+				BDD9C3E92AA5C13B00C5354E /* Frameworks */,
+				BDD9C3EA2AA5C13B00C5354E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Aerus;
+			productName = Aerus;
+			productReference = BDD9C3EC2AA5C13B00C5354E /* Aerus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BDD9C3FB2AA5C13D00C5354E /* AerusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDD9C4132AA5C13D00C5354E /* Build configuration list for PBXNativeTarget "AerusTests" */;
+			buildPhases = (
+				BDD9C3F82AA5C13D00C5354E /* Sources */,
+				BDD9C3F92AA5C13D00C5354E /* Frameworks */,
+				BDD9C3FA2AA5C13D00C5354E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDD9C3FE2AA5C13D00C5354E /* PBXTargetDependency */,
+			);
+			name = AerusTests;
+			productName = AerusTests;
+			productReference = BDD9C3FC2AA5C13D00C5354E /* AerusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BDD9C4052AA5C13D00C5354E /* AerusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDD9C4162AA5C13D00C5354E /* Build configuration list for PBXNativeTarget "AerusUITests" */;
+			buildPhases = (
+				BDD9C4022AA5C13D00C5354E /* Sources */,
+				BDD9C4032AA5C13D00C5354E /* Frameworks */,
+				BDD9C4042AA5C13D00C5354E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDD9C4082AA5C13D00C5354E /* PBXTargetDependency */,
+			);
+			name = AerusUITests;
+			productName = AerusUITests;
+			productReference = BDD9C4062AA5C13D00C5354E /* AerusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BDD9C3E42AA5C13B00C5354E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					BDD9C3EB2AA5C13B00C5354E = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					BDD9C3FB2AA5C13D00C5354E = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = BDD9C3EB2AA5C13B00C5354E;
+					};
+					BDD9C4052AA5C13D00C5354E = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = BDD9C3EB2AA5C13B00C5354E;
+					};
+				};
+			};
+			buildConfigurationList = BDD9C3E72AA5C13B00C5354E /* Build configuration list for PBXProject "Aerus" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BDD9C3E32AA5C13B00C5354E;
+			productRefGroup = BDD9C3ED2AA5C13B00C5354E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BDD9C3EB2AA5C13B00C5354E /* Aerus */,
+				BDD9C3FB2AA5C13D00C5354E /* AerusTests */,
+				BDD9C4052AA5C13D00C5354E /* AerusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDD9C3EA2AA5C13B00C5354E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDD9C3F72AA5C13D00C5354E /* Preview Assets.xcassets in Resources */,
+				BDD9C3F42AA5C13D00C5354E /* Assets.xcassets in Resources */,
+				BD5302D72ABF54B3004CA78F /* Brother 1816 Light.otf in Resources */,
+				BD5302D62ABF54B3004CA78F /* Avenir.ttc in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDD9C3FA2AA5C13D00C5354E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDD9C4042AA5C13D00C5354E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BDD9C3E82AA5C13B00C5354E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD5302BA2ABD2790004CA78F /* Task.swift in Sources */,
+				BD5302C52ABD94EE004CA78F /* Extensions.swift in Sources */,
+				BD5302C92ABEBB59004CA78F /* TaskViewBottomSheet.swift in Sources */,
+				BD5302C02ABD8759004CA78F /* SampleData.swift in Sources */,
+				BD5302BE2ABD27D3004CA78F /* WorkSleepPeriods.swift in Sources */,
+				BD5302DF2AC17064004CA78F /* ChatView.swift in Sources */,
+				BD5302C72ABDF73C004CA78F /* Settings.swift in Sources */,
+				BDD9C41A2AA5CB0900C5354E /* LoginView.swift in Sources */,
+				BDD9C3F22AA5C13B00C5354E /* ListView.swift in Sources */,
+				BD5302E82AC1F004004CA78F /* AllListView.swift in Sources */,
+				BD5302E62AC1E591004CA78F /* List.swift in Sources */,
+				BD5302EA2AC31082004CA78F /* Shade.swift in Sources */,
+				BD5302BC2ABD27B4004CA78F /* Scheduler.swift in Sources */,
+				BD5302C32ABD8B75004CA78F /* TaskCard.swift in Sources */,
+				BDD9C3F02AA5C13B00C5354E /* AerusApp.swift in Sources */,
+				BD5302E12AC1A0BB004CA78F /* MainView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDD9C3F82AA5C13D00C5354E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDD9C4012AA5C13D00C5354E /* AerusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDD9C4022AA5C13D00C5354E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDD9C40B2AA5C13D00C5354E /* AerusUITests.swift in Sources */,
+				BDD9C40D2AA5C13D00C5354E /* AerusUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BDD9C3FE2AA5C13D00C5354E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDD9C3EB2AA5C13B00C5354E /* Aerus */;
+			targetProxy = BDD9C3FD2AA5C13D00C5354E /* PBXContainerItemProxy */;
+		};
+		BDD9C4082AA5C13D00C5354E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDD9C3EB2AA5C13B00C5354E /* Aerus */;
+			targetProxy = BDD9C4072AA5C13D00C5354E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BDD9C40E2AA5C13D00C5354E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BDD9C40F2AA5C13D00C5354E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BDD9C4112AA5C13D00C5354E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Aerus/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Aerus/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Kiroshi-Tech.Aerus";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BDD9C4122AA5C13D00C5354E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Aerus/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Aerus/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Kiroshi-Tech.Aerus";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BDD9C4142AA5C13D00C5354E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Kiroshi-Tech.AerusTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Aerus.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Aerus";
+			};
+			name = Debug;
+		};
+		BDD9C4152AA5C13D00C5354E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Kiroshi-Tech.AerusTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Aerus.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Aerus";
+			};
+			name = Release;
+		};
+		BDD9C4172AA5C13D00C5354E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Kiroshi-Tech.AerusUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Aerus;
+			};
+			name = Debug;
+		};
+		BDD9C4182AA5C13D00C5354E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Kiroshi-Tech.AerusUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Aerus;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BDD9C3E72AA5C13B00C5354E /* Build configuration list for PBXProject "Aerus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDD9C40E2AA5C13D00C5354E /* Debug */,
+				BDD9C40F2AA5C13D00C5354E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDD9C4102AA5C13D00C5354E /* Build configuration list for PBXNativeTarget "Aerus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDD9C4112AA5C13D00C5354E /* Debug */,
+				BDD9C4122AA5C13D00C5354E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDD9C4132AA5C13D00C5354E /* Build configuration list for PBXNativeTarget "AerusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDD9C4142AA5C13D00C5354E /* Debug */,
+				BDD9C4152AA5C13D00C5354E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDD9C4162AA5C13D00C5354E /* Build configuration list for PBXNativeTarget "AerusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDD9C4172AA5C13D00C5354E /* Debug */,
+				BDD9C4182AA5C13D00C5354E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BDD9C3E42AA5C13B00C5354E /* Project object */;
+}
