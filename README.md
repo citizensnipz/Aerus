@@ -1,5 +1,5 @@
 # Aerus
 
-##Schedule smart. Live better.
+## Schedule smart. Live better.
 
-###AI-powered task management app
+### AI-powered task management app
