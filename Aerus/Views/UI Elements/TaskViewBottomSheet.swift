@@ -74,36 +74,78 @@ struct TaskViewBottomSheet: View {
                     .padding(.bottom, 30)
                     
                     VStack {
-                        Text(task?.description ?? "")
-                            .fancyBodyTextStyle(colorMode: .light)
+                        Group {
+                            Text(task?.description ?? "")
+                                .fancyBodyTextStyle(colorMode: .light)
+                                .padding(.leading, 24)
+                                .padding(.trailing, 24)
+                            
+                            DropDownMenuView(list: list)
+                        }
+                        
+                        HStack {
+                            Image("reminder-30")
+                                .padding(.leading, 24)
+                            Text("Reminder")
+                            Spacer()
+                            Toggle("", isOn: $isOn)
+                            .padding(.trailing, 24)
+                        }
+                        
+                        Divider()
                             .padding(.leading, 24)
                             .padding(.trailing, 24)
                         
-                        DropDownMenuView(list: list)
-                        
-                        
-                        HStack {
-                            Spacer()
-                            Image("reminder-30")
-                            Text("Reminder")
-                            Spacer()
-                            Toggle(isOn: $isOn) {
-                                
-                            }
-                            Spacer()
-                        }
                         HStack {
                             Image(systemName: "alarm.fill")
+                                .padding(.leading, 24)
                             Text("Alarm")
+                            Spacer()
+                            Text("Friday, 9/29/23 8:30PM")
+                                .opacity(0.5)
+                                .padding(.trailing, 24)
                         }
+                        
+                        Divider()
+                            .padding(.leading, 24)
+                            .padding(.trailing, 24)
+                        
                         HStack {
+                            Image(systemName: "bell.fill")
+                                .padding(.leading, 24)
                             Text("Notification")
+                            Spacer()
+                            Text("30 min before")
+                                .opacity(0.5)
+                                .padding(.trailing, 24)
                         }
+                        
+                        Divider()
+                            .padding(.leading, 24)
+                            .padding(.trailing, 24)
+                        
                         HStack {
+                            Image(systemName: "repeat")
+                                .padding(.leading, 24)
                             Text("Repeat")
+                            Spacer()
+                            Text("Never")
+                                .opacity(0.5)
+                                .padding(.trailing, 24)
                         }
+                        
+                        Divider()
+                            .padding(.leading, 24)
+                            .padding(.trailing, 24)
+                        
                         HStack {
+                            Image(systemName: "mappin.and.ellipse")
+                                .padding(.leading, 24)
                             Text("Location")
+                            Spacer()
+                            Text("None")
+                                .opacity(0.5)
+                                .padding(.trailing, 24)
                         }
                     }
                     

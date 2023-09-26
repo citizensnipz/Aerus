@@ -12,8 +12,17 @@ import SwiftUI
 struct AllListView: View {
     @ObservedObject var allLists = AllLists()
     @ObservedObject var taskStore = TaskStore()
-    //@Binding var showOverlay: Bool
     
+    init() {
+            let appearance = UINavigationBarAppearance()
+        appearance.backgroundColor = UIColor(Color(hex: "#002645"))
+        appearance.titleTextAttributes = [
+            .font : UIFont(name: "Avenir", size: 40)!,
+            .foregroundColor : UIColor(Color(hex: "E5DADA"))
+        ]
+            UINavigationBar.appearance().standardAppearance = appearance
+            UINavigationBar.appearance().scrollEdgeAppearance = appearance
+        }
     
     // Define the layout for two columns
     let columns = [
@@ -23,7 +32,8 @@ struct AllListView: View {
     
     var body: some View {
 
-            NavigationView {
+        NavigationView {
+            VStack{
                 ZStack {
                     LinearGradient.primaryDarkGradient
                         .edgesIgnoringSafeArea(.all)
@@ -33,25 +43,24 @@ struct AllListView: View {
                         .opacity(0.2)
                         .frame(width: 251, height: 175)
                         .mask(LinearGradient(gradient: Gradient(colors: [.black, .clear]), startPoint: .bottom, endPoint: .top))
-                ScrollView {
-                    LazyVGrid(columns: columns, spacing: 20) {
-                        ForEach(allLists.lists) { list in
-                            NavigationLink(destination: ListView(list: list)) {
-                                ListSquare(name: list.name, color: Color(hex: list.color))
+                    ScrollView {
+                        LazyVGrid(columns: columns, spacing: 20) {
+                            ForEach(allLists.lists) { list in
+                                NavigationLink(destination: ListView(list: list)) {
+                                    ListSquare(name: list.name, color: Color(hex: list.color))
+                                }
                             }
                         }
+                        .padding()
                     }
-                    .padding()
                 }
                 .background(Color.clear)
-                .navigationBarHidden(true)
             }
-            .background(Color.clear)
-            
-            
+
         }
-        
+
     }
+    
 }
 
 

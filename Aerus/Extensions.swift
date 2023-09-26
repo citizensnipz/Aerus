@@ -86,6 +86,24 @@ extension AppDateFormatter {
     }
 }
 
+// allows for swipe as a back action with NavigationView that uses a custom back button
+// also allows for the child view to be a ScrollView
+extension UINavigationController: UIGestureRecognizerDelegate {
+    override open func viewDidLoad() {
+        super.viewDidLoad()
+        interactivePopGestureRecognizer?.delegate = self
+    }
+
+    public func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+        return viewControllers.count > 1
+    }
+
+    // To make it works also with ScrollView
+    public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+        true
+    }
+}
+
 //text styles
 extension Text {
     func titleLargeStyle() -> some View {

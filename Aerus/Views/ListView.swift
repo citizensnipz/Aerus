@@ -12,13 +12,20 @@ import Foundation
 
 
 struct ListView: View {
+    
+    
     @EnvironmentObject var sheetManager: BottomSheetManager
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @Environment(\.dismiss) var dismiss
+    
     @State private var selectedTask: Task?
     @State var list: List
     
         
     var scheduler = Scheduler()
     var availableSlots: [DateInterval] = [DateInterval(start: Date().addingTimeInterval(-10 * 3600), end: Date().addingTimeInterval(10 * 3600))]
+    
+    
     
             
     var body: some View {
@@ -37,7 +44,6 @@ struct ListView: View {
                         if let index = list.tasks.firstIndex(where: { $0.id == task.id }) {
                             TaskCard(task: $list.tasks[index], onTap: {
                                 selectedTask = list.tasks[index]
-                                print("trying to toggle sheetmanager")
                                 sheetManager.isShowing.toggle()
                             })
                             .cornerRadius(20)
@@ -46,10 +52,10 @@ struct ListView: View {
                     }
                     
                 }
-                
+                .padding(.top, 20)
                 
             }
-
+            
             
             if sheetManager.isShowing {
                 Shade()
@@ -59,9 +65,40 @@ struct ListView: View {
             }
         }
         .animation(.easeInOut(duration: 0.5))
+        .navigationBarBackButtonHidden(true)// This hides the default back button
+        .navigationTitle(list.name)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                backButton
+            }
+//            ToolbarItem(placement: .navigation) {
+//                Text(list.name)
+//                    .titleLargeStyle()
+//                    .foregroundColor(Color(hex: "#E5DADA"))
+//                    .padding(24)
+//            }
+        }
+
         
         
     }
+    
+    var backButton: some View {
+        
+        
+            Button(action: {
+                sheetManager.isShowing = false
+                dismiss()
+            }) {
+                HStack {
+                    Image(systemName: "chevron.left")
+                        .foregroundColor(Color(hex: "#E5DADA"))
+                        .font(.system(size: 24))
+                        
+                }
+            }
+            .padding(.leading, 12)
+        }
 }
         
     
@@ -72,19 +109,4 @@ func formattedDate(_ date: Date) -> String {
     return formatter.string(from: date)
 }
 
-
-    
-
-//struct ListView_Previews: PreviewProvider {
-//    static var dateFormatter = AppDateFormatter()
-//
-////    var sampList = List(id: 0, name: "Personal", color: "#E59500", tasks: sampleTasks)
-//
-//    static var previews: some View {
-//        var sampList = List(id: 0, name: "Personal", color: "#E59500", tasks: sampleTasks)
-//
-//        ListView(list: sampList, showOverlay: false)
-//            .environmentObject(dateFormatter)
-//    }
-//}
 
